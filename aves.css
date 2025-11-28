@@ -11,8 +11,7 @@ header {
     height: 100dvh;
     width: 100dvw;
     background-color: black;
-    background-image: url(IMAGENES/Lechuza-vizcachera.jpg.) ;
-   /* background: linear-gradient(rgba(0, 0, 0, 0.7)), url(IMAGENES/Lechuza-vizcachera.jpg.);*/
+    background-image: url(IMAGENES/Lechuza-vizcachera.jpg.);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -541,4 +540,5 @@ li {
 footer{
     background-color: black;
     color: white;
+
 }
