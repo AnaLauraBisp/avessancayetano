@@ -3,52 +3,33 @@
     margin: 0;
     padding: 0;
 }
-html{
-    scroll-behavior:smooth;
+
+html {
+    scroll-behavior: smooth;
 }
 
 header {
     height: 100dvh;
     width: 100dvw;
     background-color: black;
-    background-image: url(IMAGENES/Lechuza-vizcachera.jpg);
-    background-size: auto;
+    background-image: url(IMAGENES/ojos-lechuza.jpg);
+        background-size: 60%;
+    
     background-position: center;
     background-repeat: no-repeat;
-    
-
-
 
 }
 
-.boton-inicio{
-   width: 8dvh;
-   height: 8dvw;
-    position: sticky;
-    top: 8dvh;
-    left: 90dvw;
-    z-index: 1;
-
-background-color:white;
-color:black;
-border-radius: 50%;
-border-color: black;
-font-size: 2rem;
-text-align: center;
-box-shadow: 3px 3px 2px black;
-text-align: center;
-}
 
 
 h1 {
- 
 
+    padding-top: 5dvh;
+    color: hsl(82 89% 50%);
+    font-size: clamp(1.8rem, 5vw, 15rem);
+    text-shadow: 1px 1px 1px black;
 
-color: hsl(82, 89%, 50%);
-    font-size: clamp(1.8rem, 5vw, 12rem);
-  text-shadow: 1px 1px 1px black;  
-  
-    padding: 2dvh 0dvw 18dvh 20dvw;
+    text-align: center;
 
 }
 
@@ -57,12 +38,14 @@ color: hsl(82, 89%, 50%);
 
 
 .h11 {
-  
-font-size: clamp(1rem, 5vw, 2rem);
-color: white;
-  text-shadow: 1px 1px 1px black; 
-   padding: 40dvh 2dvw 7dvh 47dvw;
-    
+
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: hsl(82 89% 50%);
+    text-shadow: hsl(82 89% 50%);
+
+    text-align: center;
+    padding-top: 8dvh;
+
 }
 
 
@@ -78,164 +61,194 @@ a {
 
 nav {
     width: 100dvw;
-    padding-bottom: 10dvh;
-      
+    padding-top: 8.5dvh;
+  
+
 
 }
+
 .nav {
 
-
-
-     display: flex;
-   
-   justify-content: space-evenly;
-   flex-direction: row;
- flex-wrap: wrap;
-    list-style: none;
-}
-.puntos-de-colores-navegacion{
     display: flex;
     flex-direction: column;
-     justify-content: space-between;
-     position: sticky;
-    top: 30dvh;
-    left: 2dvw;
-    z-index: 1;
+    justify-content: space-between;
+     height: 50dvh;
+   margin-left: 2%;
+     z-index: 1;
+    
 }
-.punto-de-enlase-jardin{
+
+.puntos-de-colores-navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: 40dvh;
+    margin-left: 1dvw;
+    
+  
+
+}
+
+.punto-de-enlase-inicio {
     height: 30px;
     width: 30px;
     display: inline-block;
-      background-color: hsl(120, 67%, 20%);
-      color: hsl(120, 67%, 20%);
-      border-radius: 50%;
-      box-shadow: 3px 3px 3px black;
- z-index: 1;
+    background-color: black;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
 }
-.punto-de-enlase-pradera{
-     display: inline-block;
+
+.punto-de-enlase-jardin {
+     position: sticky;
     height: 30px;
     width: 30px;
-  color: hsl(82 89% 30%);
-        background-color: hsl(82 89% 30%);
-      border-radius: 50%;
-      box-shadow: 3px 3px 3px black;
-       z-index: 1;
+    display: inline-block;
+    background-color: hsl(120, 67%, 20%);
+    color: hsl(120, 67%, 20%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
 }
-.punto-de-enlase-laguna{
-     display: inline-block;
+
+.punto-de-enlase-pradera {
+    display: inline-block;
     height: 30px;
     width: 30px;
-  background-color: hsl(204, 89%, 20%);
-     color: hsl(204, 89%, 20%);
-      border-radius: 50%;
-      box-shadow: 3px 3px 3px black;
-       z-index: 1;
+    color: hsl(82 89% 30%);
+    background-color: hsl(82 89% 30%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
 }
-.punto-de-enlase-arroyos{
-     display: inline-block;
+
+.punto-de-enlase-laguna {
+    display: inline-block;
     height: 30px;
     width: 30px;
- color: hsl(181, 76%, 30%);
-     background-color: hsl(181, 76%, 30%);
-      border-radius: 50%;
-      box-shadow: 3px 3px 3px black;
-       z-index: 1;
+    background-color: hsl(204, 89%, 20%);
+    color: hsl(204, 89%, 20%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
 }
-.punto-de-enlase-mar{
-     display: inline-block;
+
+.punto-de-enlase-arroyos {
+    display: inline-block;
     height: 30px;
     width: 30px;
-  background-color: hsl(46, 84%, 30%);
-   color: hsl(46, 84%, 30%);
-      border-radius: 50%;
-      box-shadow: 3px 3px 3px black;
-       z-index: 1;
+    color: hsl(181, 76%, 30%);
+    background-color: hsl(181, 76%, 30%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
+}
+
+.punto-de-enlase-mar {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: hsl(46, 84%, 30%);
+    color: hsl(46, 84%, 30%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
 }
 
 .tamano-de-enlase-jardin {
-   
-   background-color: hsl(120, 67%, 20%);
-    color: #fff;
-    padding: min(1rem, 5vw) ;
-    font-size:clamp(1rem, 5vw, 2rem);
-    text-decoration: none;
-border-style: inset; 
-border-color: rgb(4, 43, 1);
 
+    background-color: hsl(120, 67%, 20%);
+    color: #fff;
+    padding: min(1rem, 5vw);
+    font-size: clamp(1rem, 5vw, 2rem);
+    text-decoration: none;
+    border-style: inset;
+    border-color: rgb(4, 43, 1);
+ border-radius: 50%;
+  
 
 }
 
- .tamano-de-enlase-jardin:hover {
-    
+.tamano-de-enlase-jardin:hover {
+
     font-size: 2.5rem;
-   
+
 }
 
 .tamano-de-enlase-pradera {
-     background-color: hsl(82 89% 30%);
+    background-color: hsl(82 89% 30%);
 
     color: #fff;
-     padding: min(1rem, 5vw) ;
-    font-size:clamp(1rem, 5vw, 2rem);
+    padding: min(1rem, 5vw);
+    font-size: clamp(1rem, 5vw, 2rem);
     text-decoration: none;
-border-style: inset; 
-border-color: rgb(4, 43, 1);
-
+    border-style: inset;
+    border-color: rgb(4, 43, 1);
+ border-radius: 50%;
 }
 
- .tamano-de-enlase-pradera:hover {
-   
+.tamano-de-enlase-pradera:hover {
+
 
     font-size: 2.5rem;
 }
 
- .tamano-de-enlase-laguna {
+.tamano-de-enlase-laguna {
     color: #fff;
-   padding: min(1rem, 5vw) ;  
-    font-size:clamp(1rem, 5vw, 2rem);
+    padding: min(1rem, 5vw);
+    font-size: clamp(1rem, 5vw, 2rem);
     text-decoration: none;
- background-color: hsl(204, 89%, 20%);
-border-style: inset; 
-border-color: rgb(15, 1, 43);
-
+    background-color: hsl(204, 89%, 20%);
+    border-style: inset;
+    border-color: rgb(15, 1, 43);
+ border-radius: 50%;
 
 
 }
 
 .tamano-de-enlase-laguna:hover {
 
- 
+
     font-size: 2.5rem;
 }
 
 .tamano-de-enlase-arroyos {
     color: #fff;
-     padding: min(1rem, 5vw) ;
-    font-size:clamp(1rem, 5vw, 2rem);
+    padding: min(1rem, 5vw);
+    font-size: clamp(1rem, 5vw, 2rem);
     text-decoration: none;
-   background-color: hsl(181, 76%, 30%);
-   border-style: inset; 
-border-color: rgb(2, 31, 37);
+    background-color: hsl(181, 76%, 30%);
+    border-style: inset;
+    border-color: rgb(2, 31, 37);
+     border-radius: 50%;
 }
+
 .tamano-de-enlase-arroyos:hover {
- font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .tamano-de-enlase-mar {
     color: #fff;
-    background-color:  hsl(46, 84%, 30%);
-    font-size:clamp(1rem, 5vw, 2rem);
-   padding: min(1rem, 5vw) ;
+    background-color: hsl(46, 84%, 30%);
+    font-size: clamp(1rem, 5vw, 2rem);
+    padding: min(1rem, 5vw);
 
     text-decoration: none;
-    border-style: inset; 
-border-color: hsl(45, 91%, 9%); 
+    border-style: inset;
+    border-color: hsl(45, 91%, 9%);
+     border-radius: 50%;
 
 }
 
 .tamano-de-enlase-mar:hover {
-   
+
     font-size: 2.5rem;
 }
 
@@ -246,7 +259,7 @@ border-color: hsl(45, 91%, 9%);
 #jardin {
 
     background-color: hsl(120, 67%, 20%);
-    
+
 
 
 
@@ -256,50 +269,58 @@ border-color: hsl(45, 91%, 9%);
     color: hsl(120, 67%, 90%);
     font-size: 3rem;
     text-align: center;
-    padding: 3%;
-     text-shadow: 5px 5px 3px black;
+    align-items: center;
+   padding: 5%;
+    text-shadow: 5px 5px 3px black;
 }
 
-.tarjeta-jardin{
-     height: auto;
-    width: 300PX;
+.tarjeta-jardin {
+    height: auto;
+    width: 300px;
     background-color: hsl(120, 67%, 5%);
-    margin: 8% 0;
-
-     box-shadow: 10px 10px 10px black;
+    margin: 4dvh 1dvw;
+    padding: 3%;
+    box-shadow: 10px 10px 10px black;
 }
-.tarjeta-jardin:hover{
+
+.tarjeta-jardin:hover {
     transform: scale(1.1);
 }
 
 
-.nombre-ave-jardin{
-color: hsl(120, 67%, 50%);
-
-    text-align: center;
-
+.nombre-ave-jardin {
+    width: 300px;
+    height: 75.3px;
+    color: hsl(120, 67%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
-     text-shadow: 5px 5px 3px black;
+    text-shadow: 5px 5px 3px black;
 }
-.nombre-cientifico-ave-jardin{
-color: hsl(120, 67%, 85%);
+
+.nombre-cientifico-ave-jardin {
+    color: hsl(120, 67%, 85%);
 
     text-align: center;
 
     font-size: 1rem;
     margin-bottom: 10%;
-     text-shadow: 5px 5px 3px black;
+    text-shadow: 5px 5px 3px black;
 }
-.jardin-caracteristica-ave{
-  color: hsl(120, 67%, 70%);
-    font-size: 1.25rem;  
-      text-shadow: 5px 5px 3px black;
-      padding-left: 80px;
+
+.jardin-caracteristica-ave {
+    color: hsl(120, 67%, 70%);
+    font-size: 1.25rem;
+    text-shadow: 5px 5px 3px black;
+    padding-left: 80px;
 }
-.jardin-caracteristica-nula-ave{
-      color: hsl(120, 67%, 10%);
-       padding-left: 80px;
+
+.jardin-caracteristica-nula-ave {
+    color: hsl(120, 67%, 10%);
+    padding-left: 80px;
 }
+
 #pradera {
 
     background-color: hsl(82 89% 30%);
@@ -310,48 +331,57 @@ color: hsl(120, 67%, 85%);
     color: hsl(82, 89%, 90%);
     font-size: 3rem;
     text-align: center;
-    margin: 5%;
-     text-shadow: 5px 5px 3px black;
+    padding: 5%;
+    text-shadow: 5px 5px 3px black;
 }
 
-.tarjeta-aves-de-pradera{
-     height: auto;
+.tarjeta-aves-de-pradera {
+    height: auto;
     width: 300px;
     background-color: hsl(82, 89%, 5%);
-    margin: 8% 0;
+    margin: 4dvh 1dvw;
+    padding: 3%;
 
-     box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black;
 }
-.tarjeta-aves-de-pradera:hover{
+
+.tarjeta-aves-de-pradera:hover {
     transform: scale(1.1);
 }
-.nombre-ave-pradera{
-color: hsl(82, 89%, 50%);
 
-    text-align: center;
-
+.nombre-ave-pradera {
+    color: hsl(82, 89%, 50%);
+    width: 300px;
+    height: 75.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
-     text-shadow: 5px 5px 3px black;
+    text-shadow: 5px 5px 3px black;
+
 }
-.nombre-cientifico-ave-pradera{
-color: hsl(82, 89%, 85%);
+
+.nombre-cientifico-ave-pradera {
+    color: hsl(82, 89%, 85%);
 
     text-align: center;
 
     font-size: 1rem;
     margin-bottom: 10%;
-     text-shadow: 5px 5px 3px black;
+    text-shadow: 5px 5px 3px black;
 }
-.pradera-caracteristica-ave{
-  color: hsl(82, 89%, 70%);
-    font-size: 1.25rem; 
-     text-shadow: 5px 5px 3px black;
-     padding-left: 80px;
-      
+
+.pradera-caracteristica-ave {
+    color: hsl(82, 89%, 70%);
+    font-size: 1.25rem;
+    text-shadow: 5px 5px 3px black;
+    padding-left: 80px;
+
 }
-.pradera-caracteristica-nula-ave{
-      color: hsl(82, 89%, 10%);
-       padding-left: 80px;
+
+.pradera-caracteristica-nula-ave {
+    color: hsl(82, 89%, 10%);
+    padding-left: 80px;
 }
 
 #laguna {
@@ -364,47 +394,56 @@ color: hsl(82, 89%, 85%);
     color: hsl(204, 89%, 90%);
     font-size: 3rem;
     text-align: center;
-    margin: 5%;
-     text-shadow: 5px 5px 3px black;
+    padding: 5%;
+    text-shadow: 5px 5px 3px black;
 }
 
 
-.tarjeta-aves-lagunas{
-     height: auto;
+.tarjeta-aves-lagunas {
+    height: auto;
     width: 300px;
     background-color: hsl(204, 89%, 5%);
-    margin: 8% 0;
-     box-shadow: 10px 10px 10px black;
+    margin: 4dvh 1dvw;
+    padding: 3%;
+    box-shadow: 10px 10px 10px black;
 }
-.tarjeta-aves-lagunas:hover{
+
+.tarjeta-aves-lagunas:hover {
     transform: scale(1.1);
 }
-.nombre-ave-laguna{
-color: hsl(204, 89%, 50%);
 
-    text-align: center;
-
+.nombre-ave-laguna {
+    color: hsl(204, 89%, 50%);
+    width: 300px;
+    height: 75.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
-     text-shadow: 5px 5px 3px black;
+    text-shadow: 5px 5px 3px black;
+
 }
-.nombre-cientifico-ave-de-laguna{
-color: hsl(204, 89%, 90%);
+
+.nombre-cientifico-ave-de-laguna {
+    color: hsl(204, 89%, 90%);
 
     text-align: center;
 
     font-size: 1rem;
     margin-bottom: 10%;
-     text-shadow: 5px 5px 3px black;
+    text-shadow: 5px 5px 3px black;
 }
-.laguna-caracteristica-ave{
-  color: hsl(204, 89%, 70%);
-    font-size: 1.25rem;  
-      text-shadow: 5px 5px 3px black;
-       padding-left: 80px;
+
+.laguna-caracteristica-ave {
+    color: hsl(204, 89%, 70%);
+    font-size: 1.25rem;
+    text-shadow: 5px 5px 3px black;
+    padding-left: 80px;
 }
-.laguna-caracteristica-nula-ave{
-      color: hsl(204, 89%, 15%);
-       padding-left: 80px;
+
+.laguna-caracteristica-nula-ave {
+    color: hsl(204, 89%, 15%);
+    padding-left: 80px;
 }
 
 #arroyos {
@@ -417,49 +456,58 @@ color: hsl(204, 89%, 90%);
     color: hsl(181, 76%, 90%);
     font-size: 3rem;
     text-align: center;
-    margin: 5%;
-     text-shadow: 5px 5px 3px black;
+    padding: 5%;
+    text-shadow: 5px 5px 3px black;
 }
 
-.tarjeta-aves-rios{
-     height: auto;
+.tarjeta-aves-rios {
+    height: auto;
     width: 300PX;
     background-color: hsl(181, 89%, 5%);
-    margin: 8% 0;
-  
-     box-shadow: 10px 10px 10px black;
+    margin: 4dvh 1dvw;
+    padding: 3%;
+
+    box-shadow: 10px 10px 10px black;
 }
-.tarjeta-aves-rios:hover{
+
+.tarjeta-aves-rios:hover {
     transform: scale(1.1);
 }
-.nombre-ave-rio{
-color: hsl(181, 89%, 50%);
 
-    text-align: center;
-
+.nombre-ave-rio {
+    color: hsl(181, 89%, 50%);
+    height: 75.3;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
-     text-shadow: 5px 5px 3px black;
+    text-shadow: 5px 5px 3px black;
+
 }
-.nombre-cientifico-ave-de-rio{
-color: hsl(181, 89%, 85%);
+
+.nombre-cientifico-ave-de-rio {
+    color: hsl(181, 89%, 85%);
 
     text-align: center;
 
     font-size: 1rem;
     margin-bottom: 10%;
-     text-shadow: 5px 5px 3px black;
-}
-.rio-caracteristica-ave{
-  color: hsl(181, 89%, 65%);
-    font-size: 1.25rem;   
-     text-shadow: 5px 5px 3px black;
-      padding-left: 80px;
+    text-shadow: 5px 5px 3px black;
 }
 
-.rio-caracteristica-nula-ave{
-      color: hsl(181, 89%, 10%);
-       padding-left: 80px;
+.rio-caracteristica-ave {
+    color: hsl(181, 89%, 65%);
+    font-size: 1.25rem;
+    text-shadow: 5px 5px 3px black;
+    padding-left: 80px;
 }
+
+.rio-caracteristica-nula-ave {
+    color: hsl(181, 89%, 10%);
+    padding-left: 80px;
+}
+
 #mar {
     background-color: hsl(46, 84%, 30%);
 }
@@ -468,46 +516,55 @@ color: hsl(181, 89%, 85%);
     color: hsl(46, 84%, 90%);
     font-size: 3rem;
     text-align: center;
-    margin: 5%;
-     text-shadow: 5px 5px 3px black;
+    padding: 5%;
+    text-shadow: 5px 5px 3px black;
 }
-.tarjeta-aves-mar{
-     height: auto;
+
+.tarjeta-aves-mar {
+    height: auto;
     width: 300PX;
     background-color: hsl(46, 67%, 5%);
-    margin: 8% 0;
+    margin: 4dvh 1dvw;
+    padding: 3%;
 
     box-shadow: 10px 10px 10px black;
 }
-.tarjeta-aves-mar:hover{
+
+.tarjeta-aves-mar:hover {
     transform: scale(1.1);
 }
-.nombre-ave-mar{
-color: hsl(46, 67%, 50%);
 
-    text-align: center;
-
+.nombre-ave-mar {
+    color: hsl(46, 67%, 50%);
+    width: 300px;
+    height: 75.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
-     text-shadow: 5px 5px 3px black;
+    text-shadow: 5px 5px 3px black;
 }
-.nombre-cientifico-ave-mar{
-color: hsl(46, 67%, 85%);
+
+.nombre-cientifico-ave-mar {
+    color: hsl(46, 67%, 85%);
 
     text-align: center;
 
     font-size: 1rem;
     margin-bottom: 10%;
-     text-shadow: 5px 5px 3px black;
+    text-shadow: 5px 5px 3px black;
 }
-.mar-caracteristica-ave{
-  color: hsl(46, 67%, 50%);
-    font-size: 1.25rem;   
-     text-shadow: 5px 5px 3px black;
-      padding-left: 80px;
+
+.mar-caracteristica-ave {
+    color: hsl(46, 67%, 50%);
+    font-size: 1.25rem;
+    text-shadow: 5px 5px 3px black;
+    padding-left: 80px;
 }
-.mar-caracteristica-nula-ave{
-      color: hsl(46, 67%, 10%);
-       padding-left: 80px;
+
+.mar-caracteristica-nula-ave {
+    color: hsl(46, 67%, 10%);
+    padding-left: 80px;
 }
 
 
@@ -537,9 +594,9 @@ li {
 
 
 }
-footer{
+
+footer {
     background-color: black;
     color: white;
-
+    padding: 1dvw;
 }
-
