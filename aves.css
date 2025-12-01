@@ -101,6 +101,20 @@ nav {
     z-index: 1;
      position: sticky;
 }
+@media(max-width:600px) {
+    .punto-de-enlase-inicio {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-color: black;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
+    }
+}
+
 
 .punto-de-enlase-jardin {
      position: sticky;
@@ -114,6 +128,22 @@ nav {
     z-index: 1;
 }
 
+@media(max-width:600px) {
+.punto-de-enlase-jardin {
+     position: sticky;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-color: hsl(120, 67%, 20%);
+    color: hsl(120, 67%, 20%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+}
+
+
+}
+
 .punto-de-enlase-pradera {
     display: inline-block;
     height: 30px;
@@ -125,6 +155,20 @@ nav {
     z-index: 1;
      position: sticky;
 }
+@media(max-width:600px) {
+    .punto-de-enlase-pradera {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    color: hsl(82 89% 30%);
+    background-color: hsl(82 89% 30%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
+}
+}
+
 
 .punto-de-enlase-laguna {
     display: inline-block;
@@ -138,6 +182,21 @@ nav {
      position: sticky;
 }
 
+@media(max-width:600px) {
+    
+.punto-de-enlase-laguna {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: hsl(204, 89%, 20%);
+    color: hsl(204, 89%, 20%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
+}
+}
+
 .punto-de-enlase-arroyos {
     display: inline-block;
     height: 30px;
@@ -149,6 +208,20 @@ nav {
     z-index: 1;
      position: sticky;
 }
+@media(max-width:600px) {
+    .punto-de-enlase-arroyos {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    color: hsl(181, 76%, 30%);
+    background-color: hsl(181, 76%, 30%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
+}
+}
+
 
 .punto-de-enlase-mar {
     display: inline-block;
@@ -160,6 +233,19 @@ nav {
     box-shadow: 3px 3px 3px black;
     z-index: 1;
      position: sticky;
+}
+@media(max-width:600px) {
+    .punto-de-enlase-mar {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: hsl(46, 84%, 30%);
+    color: hsl(46, 84%, 30%);
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px black;
+    z-index: 1;
+     position: sticky;
+}
 }
 
 .tamano-de-enlase-jardin {
