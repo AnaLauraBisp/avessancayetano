@@ -11,24 +11,18 @@ html {
 header {
     height: 100dvh;
     width: 100dvw;
-    background-color: black;
-    background-image: url(IMAGENES/ojos-lechuza.jpg);
-        background-size: 60%;
-    
-    background-position: center;
-    background-repeat: no-repeat;
-
+    background-color: rgb(110, 97, 97);
+    padding: 10dvh;
 }
 
 
 
 h1 {
 
-    padding-top: 5dvh;
-    color: hsl(82 89% 50%);
-    font-size: clamp(1.8rem, 5vw, 15rem);
-    text-shadow: 1px 1px 1px black;
 
+    color: hsl(82 89% 50%);
+    font-size: clamp(1.3rem, 5vw, 15rem);
+    text-shadow: 5px 5px 5px black;
     text-align: center;
 
 }
@@ -44,7 +38,7 @@ h1 {
     text-shadow: hsl(82 89% 50%);
 
     text-align: center;
-    padding-top: 8dvh;
+    padding-bottom: 5dvh;
 
 }
 
@@ -58,25 +52,51 @@ a {
 
 
 }
+.cinco-fotos-aves-inicio{
+width: 90dvw;
+height: 30dvh;
+margin: 5dvh 5dvw;
 
-nav {
-    width: 100dvw;
-    padding-top: 8.5dvh;
-  
-
-
-}
-
-.nav {
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-     height: 50dvh;
-   margin-left: 2%;
-     z-index: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
     
 }
+.fotos-aves-inicio{
+
+   width: 15dvw;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
+
+}
+@media(max-width:600px){
+    .fotos-aves-inicio{
+ width: 25dvw;
+ 
+    }
+    
+}
+
+
+.tero-enlace-pradera:hover {
+    transform: scale(1.2);
+}
+.cabecitanegra-enlace-jardin:hover {
+    transform: scale(1.2);
+}
+.flamenco-enlace-laguna:hover {
+    transform: scale(1.2);
+}
+.garcita-enlace-arroyo:hover {
+    transform: scale(1.2);
+}
+.gaviota-enlace-mar:hover {
+transform: scale(1.2);
+}
+
 
 .puntos-de-colores-navegacion {
     display: flex;
@@ -94,7 +114,7 @@ nav {
     height: 30px;
     width: 30px;
     display: inline-block;
-    background-color: black;
+    background-color: black(13, 13, 13);
     color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
