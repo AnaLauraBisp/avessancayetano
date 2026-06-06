@@ -35,8 +35,8 @@ h1 {
 
     font-size: clamp(1rem, 5vw, 2rem);
     color: hsl(82 89% 50%);
-    text-shadow: hsl(82 89% 50%);
-
+   
+text-shadow: 5px 5px 5px black;
     text-align: center;
     padding-bottom: 5dvh;
 
@@ -100,22 +100,19 @@ transform: scale(1.2);
 
 .puntos-de-colores-navegacion {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-    position: sticky;
-    top: 40dvh;
     margin-left: 1dvw;
-    
-  
+
 
 }
 
 .punto-de-enlase-inicio {
     height: 30px;
     width: 30px;
-    display: inline-block;
-    background-color: black(13, 13, 13);
-    color: black;
+    
+    background-color:  rgb(110, 97, 97);
+    color: rgb(110, 97, 97);
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
@@ -125,9 +122,9 @@ transform: scale(1.2);
     .punto-de-enlase-inicio {
     height: 50px;
     width: 50px;
-    display: inline-block;
-    background-color: black;
-    color: black;
+    
+    background-color:  rgb(110, 97, 97);
+    color:  rgb(110, 97, 97);
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
@@ -140,7 +137,7 @@ transform: scale(1.2);
      position: sticky;
     height: 30px;
     width: 30px;
-    display: inline-block;
+    
     background-color: hsl(120, 67%, 20%);
     color: hsl(120, 67%, 20%);
     border-radius: 50%;
@@ -153,7 +150,7 @@ transform: scale(1.2);
      position: sticky;
     height: 50px;
     width: 50px;
-    display: inline-block;
+    
     background-color: hsl(120, 67%, 20%);
     color: hsl(120, 67%, 20%);
     border-radius: 50%;
@@ -165,7 +162,7 @@ transform: scale(1.2);
 }
 
 .punto-de-enlase-pradera {
-    display: inline-block;
+    
     height: 30px;
     width: 30px;
     color: hsl(82 89% 30%);
@@ -177,7 +174,7 @@ transform: scale(1.2);
 }
 @media(max-width:600px) {
     .punto-de-enlase-pradera {
-    display: inline-block;
+    
     height: 50px;
     width: 50px;
     color: hsl(82 89% 30%);
@@ -191,7 +188,7 @@ transform: scale(1.2);
 
 
 .punto-de-enlase-laguna {
-    display: inline-block;
+    
     height: 30px;
     width: 30px;
     background-color: hsl(204, 89%, 20%);
@@ -205,7 +202,7 @@ transform: scale(1.2);
 @media(max-width:600px) {
     
 .punto-de-enlase-laguna {
-    display: inline-block;
+    
     height: 50px;
     width: 50px;
     background-color: hsl(204, 89%, 20%);
@@ -218,7 +215,7 @@ transform: scale(1.2);
 }
 
 .punto-de-enlase-arroyos {
-    display: inline-block;
+
     height: 30px;
     width: 30px;
     color: hsl(181, 76%, 30%);
@@ -230,7 +227,7 @@ transform: scale(1.2);
 }
 @media(max-width:600px) {
     .punto-de-enlase-arroyos {
-    display: inline-block;
+    
     height: 50px;
     width: 50px;
     color: hsl(181, 76%, 30%);
@@ -244,7 +241,7 @@ transform: scale(1.2);
 
 
 .punto-de-enlase-mar {
-    display: inline-block;
+    
     height: 30px;
     width: 30px;
     background-color: hsl(46, 84%, 30%);
@@ -256,7 +253,6 @@ transform: scale(1.2);
 }
 @media(max-width:600px) {
     .punto-de-enlase-mar {
-    display: inline-block;
     height: 50px;
     width: 50px;
     background-color: hsl(46, 84%, 30%);
