@@ -9,28 +9,43 @@ html {
 }
 
 header {
+      background-color: rgb(3, 22, 29);
     height: 100dvh;
     width: 100dvw;
+}
+
+.portada{
+    align-items: center;
+    height: 100%;
+    width: 100%;
     background-color: rgb(110, 97, 97);
-    padding: 10dvh;
+    background-color: rgb(7, 69, 7);
+    background-color: rgb(5, 42, 54);
+border-radius: 50%;
+    
 }
 
 
 
 h1 {
-
-
     color: hsl(82 89% 50%);
-    font-size: clamp(1.3rem, 5vw, 15rem);
+    font-size: clamp(1.5rem, 3vw, 5rem);
     text-shadow: 5px 5px 5px black;
+}
+.h1-grupo{
     text-align: center;
+padding: 5dvh;
 
 }
 
 
+@media(max-width:600px){
+    .h1-grupo{
+        margin-top: 10%;
+        
+    }
 
-
-
+}
 .h11 {
 
     font-size: clamp(1rem, 5vw, 2rem);
@@ -38,10 +53,15 @@ h1 {
    
 text-shadow: 5px 5px 5px black;
     text-align: center;
-    padding-bottom: 5dvh;
+    margin-top: 5%;
 
 }
-
+@media(max-width:600px){
+    .h11{
+        margin-top: 50%;
+        
+    }
+}
 
 
 a {
@@ -53,28 +73,29 @@ a {
 
 }
 .cinco-fotos-aves-inicio{
-width: 90dvw;
-height: 30dvh;
-margin: 5dvh 5dvw;
+width: 100dvw;
+height:30dvh;
+
 
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
+    align-items: center;
 
     
 }
 .fotos-aves-inicio{
 
-   width: 15dvw;
+   width: 17dvw;
     border-radius: 50%;
     box-shadow: 5px 5px 5px black;
 
 }
 @media(max-width:600px){
     .fotos-aves-inicio{
- width: 25dvw;
+ width: 30dvw;
+ margin: 3dvw;
  
     }
     
@@ -98,61 +119,69 @@ transform: scale(1.2);
 }
 
 
-.puntos-de-colores-navegacion {
+.puntos-de-colores-navegacion ul {
+    height: 10dvh;
+    position: fixed;
+    list-style: none;
+    width: 100%;
+    
+background-color: black;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 1dvw;
+    justify-content: space-evenly;
+    
 
-
+z-index: 1000;
+position: sticky;
 }
 
 .punto-de-enlase-inicio {
-    height: 30px;
-    width: 30px;
+  height: 100%;  
     
+    padding: 30%;
     background-color:  rgb(110, 97, 97);
-    color: rgb(110, 97, 97);
+    color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
      position: sticky;
 }
+.punto-de-enlase-inicio:hover {
+     
+     color: white;
+}
+
 @media(max-width:600px) {
     .punto-de-enlase-inicio {
-    height: 50px;
-    width: 50px;
-    
     background-color:  rgb(110, 97, 97);
-    color:  rgb(110, 97, 97);
+    color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
      position: sticky;
     }
+
 }
 
 
 .punto-de-enlase-jardin {
      position: sticky;
-    height: 30px;
-    width: 30px;
-    
+    height: 100%;
+    padding: 30%;
     background-color: hsl(120, 67%, 20%);
-    color: hsl(120, 67%, 20%);
+    color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
 }
-
+.punto-de-enlase-jardin:hover {
+     
+     color: white;
+}
 @media(max-width:600px) {
 .punto-de-enlase-jardin {
      position: sticky;
-    height: 50px;
-    width: 50px;
-    
     background-color: hsl(120, 67%, 20%);
-    color: hsl(120, 67%, 20%);
+    color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
@@ -163,22 +192,26 @@ transform: scale(1.2);
 
 .punto-de-enlase-pradera {
     
-    height: 30px;
-    width: 30px;
-    color: hsl(82 89% 30%);
+    height: 100%;
+    padding: 30%;
+    color:black;
     background-color: hsl(82 89% 30%);
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
      position: sticky;
 }
+.punto-de-enlase-pradera:hover {
+     
+     color: white;
+}
+
+
 @media(max-width:600px) {
     .punto-de-enlase-pradera {
     
-    height: 50px;
-    width: 50px;
     color: hsl(82 89% 30%);
-    background-color: hsl(82 89% 30%);
+    background-color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
@@ -189,24 +222,28 @@ transform: scale(1.2);
 
 .punto-de-enlase-laguna {
     
-    height: 30px;
-    width: 30px;
+    height: 100%;
+    padding: 30%;
     background-color: hsl(204, 89%, 20%);
-    color: hsl(204, 89%, 20%);
+    color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
      position: sticky;
+}
+
+.punto-de-enlase-laguna:hover {
+     
+     color: white;
 }
 
 @media(max-width:600px) {
     
 .punto-de-enlase-laguna {
     
-    height: 50px;
-    width: 50px;
+
     background-color: hsl(204, 89%, 20%);
-    color: hsl(204, 89%, 20%);
+    color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
@@ -216,21 +253,25 @@ transform: scale(1.2);
 
 .punto-de-enlase-arroyos {
 
-    height: 30px;
-    width: 30px;
-    color: hsl(181, 76%, 30%);
+    height: 100%;
+    padding: 30%;
+    color: black;
     background-color: hsl(181, 76%, 30%);
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
      position: sticky;
 }
+.punto-de-enlase-arroyos:hover {
+     
+     color: white;
+}
+
 @media(max-width:600px) {
     .punto-de-enlase-arroyos {
     
-    height: 50px;
-    width: 50px;
-    color: hsl(181, 76%, 30%);
+    
+    color: black;
     background-color: hsl(181, 76%, 30%);
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
@@ -242,21 +283,25 @@ transform: scale(1.2);
 
 .punto-de-enlase-mar {
     
-    height: 30px;
-    width: 30px;
+    height: 100%;
+    padding: 30%;
     background-color: hsl(46, 84%, 30%);
-    color: hsl(46, 84%, 30%);
+    color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
      position: sticky;
 }
+.punto-de-enlase-mar:hover {
+     
+     color: white;
+}
+
 @media(max-width:600px) {
     .punto-de-enlase-mar {
-    height: 50px;
-    width: 50px;
+    
     background-color: hsl(46, 84%, 30%);
-    color: hsl(46, 84%, 30%);
+    color: black;
     border-radius: 50%;
     box-shadow: 3px 3px 3px black;
     z-index: 1;
@@ -379,12 +424,26 @@ transform: scale(1.2);
 .tarjeta-jardin {
     height: auto;
     width: 300px;
+    
     background-color: hsl(120, 67%, 5%);
     margin: 4dvh 1dvw;
     padding: 3%;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10%;
 }
 
+@media(max-width:600px) {
+    .tarjeta-jardin{
+         height: auto;
+    width: 290px;
+    
+    background-color: hsl(120, 67%, 5%);
+    margin: 4dvh 1dvw;
+    padding: 3%;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10%;
+    }
+}
 .tarjeta-jardin:hover {
     transform: scale(1.1);
 }
@@ -426,8 +485,10 @@ transform: scale(1.2);
 #pradera {
 
     background-color: hsl(82 89% 30%);
+    background-color: hsl(82, 84%, 29%);
 
 }
+
 
 .titulo-aves-zonas-rurales {
     color: hsl(82, 89%, 90%);
@@ -443,8 +504,8 @@ transform: scale(1.2);
     background-color: hsl(82, 89%, 5%);
     margin: 4dvh 1dvw;
     padding: 3%;
-
-    box-shadow: 10px 10px 10px black;
+border-radius: 10%;
+    box-shadow: 0px 0px 20px black;
 }
 
 .tarjeta-aves-de-pradera:hover {
@@ -507,7 +568,8 @@ transform: scale(1.2);
     background-color: hsl(204, 89%, 5%);
     margin: 4dvh 1dvw;
     padding: 3%;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10%;
 }
 
 .tarjeta-aves-lagunas:hover {
@@ -568,8 +630,8 @@ transform: scale(1.2);
     background-color: hsl(181, 89%, 5%);
     margin: 4dvh 1dvw;
     padding: 3%;
-
-    box-shadow: 10px 10px 10px black;
+border-radius: 10%;
+    box-shadow: 0px 0px 20px black;
 }
 
 .tarjeta-aves-rios:hover {
@@ -628,8 +690,8 @@ transform: scale(1.2);
     background-color: hsl(46, 67%, 5%);
     margin: 4dvh 1dvw;
     padding: 3%;
-
-    box-shadow: 10px 10px 10px black;
+border-radius: 10%;
+    box-shadow: 0px 0px 20px black;
 }
 
 .tarjeta-aves-mar:hover {
